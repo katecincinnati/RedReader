@@ -82,6 +82,7 @@
 			android:padding="12dp"
 			android:background="?rrThemedButtonSelector"
 			android:contentDescription="@string/options_submit_post"
+			android:visibility="gone"
 			android:src="?rrIconReply"/>
 
 	<ImageButton
@@ -91,6 +92,7 @@
 			android:padding="12dp"
 			android:background="?rrThemedButtonSelector"
 			android:contentDescription="@string/action_share"
+			android:visibility="gone"
 			android:src="?rrIconShare"/>
 
 	<ImageButton

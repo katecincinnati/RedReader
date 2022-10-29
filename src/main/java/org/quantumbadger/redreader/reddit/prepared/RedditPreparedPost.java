@@ -1151,7 +1151,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 			postListDescSb.append(" ", 0);
 		}
 
-		if(mPostSubtitleItems.contains(PrefsUtility.AppearancePostSubtitleItem.AUTHOR)) {
+		/*if(mPostSubtitleItems.contains(PrefsUtility.AppearancePostSubtitleItem.AUTHOR)) {
 			postListDescSb.append(context.getString(R.string.subtitle_by) + " ", 0);
 
 			final boolean setBackgroundColour;
@@ -1187,13 +1187,13 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 			}
 
 			postListDescSb.append(" ", 0);
-		}
+		}*/
 
 		if(mPostSubtitleItems.contains(PrefsUtility.AppearancePostSubtitleItem.SUBREDDIT)) {
 			if(showSubreddit) {
-				postListDescSb.append(context.getString(R.string.subtitle_to) + " ", 0);
+				postListDescSb.append("\n" + context.getString(R.string.subtitle_to) + " ", 0);
 				postListDescSb.append(
-						src.getSubreddit(),
+						"r/" + src.getSubreddit(),
 						BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
 						boldCol,
 						0,
